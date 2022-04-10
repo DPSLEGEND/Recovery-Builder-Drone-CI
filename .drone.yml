@@ -12,18 +12,18 @@ steps:
   image: brock5555/recovery
   environment:
        MANIFEST:
-         from_secret: MANIFEST
+         from_secret: https://github.com/SHRP/manifest.git
        DEVICE:
-         from_secret: DEVICE
+         from_secret: RMX3171
        BRANCH:
-         from_secret: BRANCH
+         from_secret: v3_11.0
        DT_LINK:
-         from_secret: DT_LINK
+         from_secret: https://github.com/DPSLEGEND/android_recovery_realme_RMX3171
        DT_PATH:
-         from_secret: DT_PATH
+         from_secret: device/realme/RMX3171
        TG_CHAT_ID:
-         from_secret: TG_CHAT_ID
+         from_secret: -1001565004294
        TG_TOKEN:
-         from_secret: TG_TOKEN
+         from_secret: 5257070656:AAHFD-r5gbopPb7JhLKSrfrpj0P2ojqrqN
   commands:
   - bash build.sh
